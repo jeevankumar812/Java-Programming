@@ -10,5 +10,10 @@
 **ColorSubList - o/p**- https://github.com/jeevankumar812/Java-Programming/blob/main/ColorSubList_Output.png  
 **DeleteNthColor - o/p** https://github.com/jeevankumar812/Java-Programming/blob/main/DeleteNthColor_Output.png
 
-
+# Program 1b - LinkedList
+**LinkedListIteratorStart**- https://github.com/jeevankumar812/Java-Programming/blob/main/LinkedListIteratorStart_Output.png
+**ReverseLinkedList**- https://github.com/jeevankumar812/Java-Programming/blob/main/ReverseLinkedList_Output.png
+**LinkedListOfferLast**- https://github.com/jeevankumar812/Java-Programming/blob/main/LinkedListOfferLast_Output.png
+**LinkedListPositions**- https://github.com/jeevankumar812/Java-Programming/blob/main/LinkedListPositions_Output.png
+**LinkedListSwap**- https://github.com/jeevankumar812/Java-Programming/blob/main/LinkedListSwap_Output.png
 
