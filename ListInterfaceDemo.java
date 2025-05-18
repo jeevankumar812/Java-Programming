@@ -71,5 +71,146 @@ System.out.println("After removing first and last: " + fruits);
 }
 
 
+//Exercise Programs
+// ArrayList 
+//1 .Write a java program for getting different colors through ArrayList interface and search whether the color "Red" is available or not
+import java.util.*;
+
+public class ColorSearch {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>(Arrays.asList("Red", "Green", "Blue", "Yellow"));
+        System.out.println("Colors: " + colors);
+
+        boolean hasRed = colors.contains("Red");
+        System.out.println("Contains 'Red'? " + hasRed);
+    }
+}
+
+//2. Write a java program for getting different colors through ArrayList interface and remove the 2nd element and color "Blue" from the ArrayList
+import java.util.*;
+
+public class ColorRemove {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>(Arrays.asList("Red", "Green", "Blue", "Yellow"));
+        System.out.println("Original Colors: " + colors);
+
+        colors.remove(1); 
+        colors.remove("Blue"); 
+        System.out.println("After Removals: " + colors);
+    }
+}
+
+//3. Write a java program for getting different colors through ArrayList interface and sort them using Collections.sort( ArrayListObj)
+import java.util.*;
+
+public class ColorSort {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>(Arrays.asList("Red", "Green", "Blue", "Yellow"));
+        System.out.println("Before Sorting: " + colors);
+
+        Collections.sort(colors);
+        System.out.println("After Sorting: " + colors);
+    }
+}
+
+//4 .Write a java program for getting different colors through ArrayList interface and extract the elements 1st and 2nd from the ArrayList object by using SubList()
+import java.util.*;
+
+public class ColorSubList {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>(Arrays.asList("Red", "Green", "Blue", "Yellow"));
+        System.out.println("Colors: " + colors);
+
+        List<String> sub = colors.subList(0, 2);
+        System.out.println("First and Second Elements: " + sub);
+    }
+}
+
+//5 .Write a java program for getting different colors through ArrayList interface and delete nth element from the ArrayList object by using remove by index
+import java.util.*;
+
+public class DeleteNthColor {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>(Arrays.asList("Red", "Green", "Blue", "Yellow"));
+        int n = 2; 
+        System.out.println("Original Colors: " + colors);
+
+        if (n < colors.size()) {
+            colors.remove(n);
+            System.out.println("After removing index " + n + ": " + colors);
+        } else {
+            System.out.println("Index out of bounds");
+        }
+    }
+}
+
+//LinkedList
+//1. Write a Java program to iterate through all elements in a linked list starting at the specified position ( 2nd) using iterator ( hint : Iterator iteratorobj = listobj.listIterator(1))
+import java.util.*;
+
+public class LinkedListIteratorStart {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>(Arrays.asList("Red", "Green", "Blue", "Yellow"));
+        ListIterator<String> iterator = list.listIterator(1); 
+
+        System.out.println("Iterating from 2nd element:");
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+}
+
+//2. Write a Java program to iterate a linked list in reverse order (using objlist.descendingIterator())
+import java.util.*;
+
+public class LinkedListIteratorStart {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>(Arrays.asList("Red", "Green", "Blue", "Yellow"));
+        ListIterator<String> iterator = list.listIterator(1); 
+
+        System.out.println("Iterating from 2nd element:");
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+}
+
+//3. Write a Java program to insert the specified element at the end of a linked list.( using l_listobj.offerLast("Pink"))
+import java.util.*;
+
+public class LinkedListOfferLast {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>(Arrays.asList("Red", "Green", "Blue"));
+        list.offerLast("Pink");
+
+        System.out.println("After adding Pink at end: " + list);
+    }
+}
 
 
+//4.Write a Java program to display elements and their positions in a linked list ( using l_listobj.get(p) )
+import java.util.*;
+
+public class LinkedListPositions {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>(Arrays.asList("Red", "Green", "Blue", "Yellow"));
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("Element at position " + i + ": " + list.get(i));
+        }
+    }
+}
+
+
+//5.Write a Java program that swaps two elements ( first and third elements ) in a linked list ( using Collections.swap(l_list, 0, 2))
+import java.util.*;
+
+public class LinkedListSwap {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>(Arrays.asList("Red", "Green", "Blue", "Yellow"));
+        System.out.println("Before Swap: " + list);
+
+        Collections.swap(list, 0, 2); 
+        System.out.println("After Swap: " + list);
+    }
+}
