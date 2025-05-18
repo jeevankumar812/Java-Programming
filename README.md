@@ -18,3 +18,9 @@
 - **LinkedListSwap-o/p**-(https://github.com/jeevankumar812/Java-Programming/blob/main/LinkedListSwap_Output.png)
 
 
+# Program 2a - String Operations
+- **StringOperations-o/p**-(https://github.com/jeevankumar812/Java-Programming/blob/main/StringOperations_Output.png)
+
+# Program 2ab- String Builder and String Buffer
+- **BufferBuilderComparison-o/p**-(https://github.com/jeevankumar812/Java-Programming/blob/main/BufferBuilderComparison_Output.png)
+
