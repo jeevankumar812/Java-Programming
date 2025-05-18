@@ -19,8 +19,10 @@
 
 
 # Program 2a - String Operations
+- **StringOperations**-(https://github.com/jeevankumar812/Java-Programming/blob/main/StringOperations.java)
 - **StringOperations-o/p**-(https://github.com/jeevankumar812/Java-Programming/blob/main/StringOperations_Output.png)
 
 # Program 2ab- String Builder and String Buffer
+- **BufferBuilderComparison**-(https://github.com/jeevankumar812/Java-Programming/blob/main/StringOperations.java)
 - **BufferBuilderComparison-o/p**-(https://github.com/jeevankumar812/Java-Programming/blob/main/BufferBuilderComparison_Output.png)
 
