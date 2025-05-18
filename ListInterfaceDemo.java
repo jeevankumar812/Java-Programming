@@ -167,17 +167,18 @@ public class LinkedListIteratorStart {
 //2. Write a Java program to iterate a linked list in reverse order (using objlist.descendingIterator())
 import java.util.*;
 
-public class LinkedListIteratorStart {
+public class ReverseLinkedList {
     public static void main(String[] args) {
         LinkedList<String> list = new LinkedList<>(Arrays.asList("Red", "Green", "Blue", "Yellow"));
-        ListIterator<String> iterator = list.listIterator(1); 
 
-        System.out.println("Iterating from 2nd element:");
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+        Iterator<String> descending = list.descendingIterator();
+        System.out.println("Reversed Iteration:");
+        while (descending.hasNext()) {
+            System.out.println(descending.next());
         }
     }
 }
+
 
 //3. Write a Java program to insert the specified element at the end of a linked list.( using l_listobj.offerLast("Pink"))
 import java.util.*;
